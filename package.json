@@ -4,15 +4,18 @@
   "description": "Project 2 Mvp gaols  Front end: Smooth interactive front end 3 pages or more A new design i never did before A drop down menu Scrollable pages   Back end:  Fully  working server no error Interactive  Easy to update     Main goal is to work on this without help of chat gpt I still want to include design from youtube and ideas i",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "start": "node server.js",
+     "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
-    "mongoose": "^7.6.2",
+    "mongoose": "^7.6.3",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1"
   }
