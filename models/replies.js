@@ -7,4 +7,4 @@ const postSchema = new Schema({
 
 });
 
-module.exports = mongoose.model('reply', replySchema);
+module.exports = postSchema

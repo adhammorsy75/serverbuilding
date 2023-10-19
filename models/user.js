@@ -1,9 +1,9 @@
 const { Schema } = require('mongoose')
 
 
-const postSchema = new Schema({
+const userSchema = new Schema({
   username:{type : String },
   password:{type : String }
-});
+})
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = userSchema
