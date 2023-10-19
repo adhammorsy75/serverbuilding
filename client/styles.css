@@ -1,0 +1,112 @@
+
+
+body {
+
+  height: 100vh;
+  width: 100vw, cover;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover
+  
+}
+
+/* Center the login form */
+.container {
+  width: 300px; /* Adjust the width to your preference */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: aliceblue;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+H1 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 200%;
+}
+
+button {
+  background-color: black;
+  color: white;
+
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 12rem;
+  border-left: 3px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+
+
+}
+head{
+  background-color: #111112;
+
+}
+li{ 
+  list-style-type: none;
+  color: aliceblue;
+  font: optional;
+}
+
+li{ 
+  list-style-type: none;
+  color: aliceblue;
+  font: optional;
+}
+
+/* Style form inputs */
+form {
+  margin-top: 20px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
