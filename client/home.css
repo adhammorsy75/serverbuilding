@@ -1,0 +1,169 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Center the login form */
+  .container {
+    width: 300px; /* Adjust the width to your preference */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white; /* Change the background color to white */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
+  }
+  
+  h2 {
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  h1 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 1000%;
+  }
+  
+  button {
+    background-color: black;
+    color: white;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: 12rem;
+    border-left: 3px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  head {
+    background-color: #111112;
+  }
+  
+  li {
+    list-style-type: none;
+    color: aliceblue;
+    font: optional;
+    text-size-adjust: 70px;
+  }
+  
+  /* Style form inputs */
+  form {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style links */
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  #container {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 650px;
+    border: 3px solid wheat;
+    overflow: auto; /* Add overflow property to make it scrollable */
+  }
+  
+  #snap {
+    color: aliceblue;
+    width: 100%; /* Adjust the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Add any additional styling for your JavaScript-generated content within #snap */
+  
+   h3 {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+    font-size: 150%;
+    background-color: black;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set the background color as needed */
+}
+
+.homepage {
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #007bff; /* Set the initial color */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+}
+
+.start-button:hover {
+    background-color: #007bff; /* Change to blue on hover */
+    color: white; /* Change text color to white on hover */
+}

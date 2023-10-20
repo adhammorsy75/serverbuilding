@@ -61,6 +61,8 @@ li {
   list-style-type: none;
   color: aliceblue;
   font: optional;
+  text-size-adjust: 70px;
+
 }
 
 /* Style form inputs */
@@ -100,28 +102,37 @@ a {
 a:hover {
   text-decoration: underline;
 }
-#snap {
-  color: aliceblue;
-
-
-}
 #container {
-  width: 60% ;
+  width: 60%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
- margin:auto ;
- 
- }
+  margin: auto;
+  max-width: 7000px;
+  max-height: 650px;
+  border: 3px solid wheat;
+  overflow: auto; /* Add overflow property to make it scrollable */
+}
+
+#snap {
+  color: aliceblue;
+  width: 100%; /* Adjust the width */
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+/* Add any additional styling for your JavaScript-generated content within #snap */
 
  h3 {
   color: aliceblue;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   font-style: italic;
-  font-size: 150%;
-  background-color: black;
+  font-size: 120%;
+  
 }
 
 #Username {
@@ -129,4 +140,35 @@ a:hover {
 }
 #snapdata {
   color: aliceblue;
+}
+/* Add a class to your navigation bar ul element */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 12rem;
+  border-left: 3px solid var(--border-color);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the links inside the navigation bar */
+.navbar li {
+  list-style-type: none;
+  color: aliceblue;
+  font: optional;
+  text-size-adjust: 70px;
+  position: relative; /* Added this to position the underline */
+  cursor: pointer; /* Added to indicate interactivity */
+}
+
+/* Add the underline effect on hover */
+.navbar li a {
+  text-decoration: none; /* Remove the default underline */
+  color: white;
+}
+
+.navbar li a:hover {
+  text-decoration: underline; /* Add underline on hover */
 }
