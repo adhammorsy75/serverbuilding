@@ -1,16 +1,12 @@
-
-
 body {
-
   height: 100vh;
-  width: 100vw, cover;
+  width: 100vw;
   background-color: black;
-  margin: 0rem;
+  margin: 0;
   overflow: hidden;
   background-image: url("https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?cs=srgb&dl=pexels-adrien-olichon-2387793.jpg&fm=jpg");
   background-repeat: no-repeat;
-  background-size: cover
-  
+  background-size: cover;
 }
 
 /* Center the login form */
@@ -18,19 +14,22 @@ body {
   width: 300px; /* Adjust the width to your preference */
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
+  background-color: white; /* Change the background color to white */
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the div horizontally and vertically */
 }
 
 h2 {
   color: aliceblue;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
-H1 {
+h1 {
   color: aliceblue;
   display: flex;
   justify-content: center;
@@ -41,33 +40,24 @@ H1 {
 button {
   background-color: black;
   color: white;
-
 }
 
 ul {
   display: flex;
   justify-content: space-evenly;
-
   padding: 1rem 2rem;
   display: flex;
   gap: 12rem;
   border-left: 3px solid var(--border-color);
   align-items: center;
   justify-content: center;
-
-
 }
-head{
+
+head {
   background-color: #111112;
-
-}
-li{ 
-  list-style-type: none;
-  color: aliceblue;
-  font: optional;
 }
 
-li{ 
+li {
   list-style-type: none;
   color: aliceblue;
   font: optional;
@@ -90,7 +80,7 @@ input[type="password"] {
 
 button {
   background-color: #007bff;
-  color: #fff;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -109,4 +99,34 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+#snap {
+  color: aliceblue;
+
+
+}
+#container {
+  width: 60% ;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ margin:auto ;
+ 
+ }
+
+ h3 {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-size: 150%;
+  background-color: black;
+}
+
+#Username {
+  color: white
+}
+#snapdata {
+  color: aliceblue;
 }
