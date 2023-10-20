@@ -1,5 +1,5 @@
 const db = require('../db')
-const { Post, User } = require('../models')
+const { User, Replies } = require('../models')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
@@ -25,7 +25,7 @@ const replies = [
 
 module.exports = replies;
 
-await User.insertMany(replies)
+await Replies.insertMany(replies)
 console.log("added replies")
 }
 const run = async () => {

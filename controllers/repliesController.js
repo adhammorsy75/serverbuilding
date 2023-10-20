@@ -24,9 +24,9 @@ const deletereply = async (req, res) => {
 }
 }
 
-const veiwreply = async (req, res) => {
+const viewReply = async (req, res) => {
  try {
-    const reply = await reply.find()
+    const reply = await Replies.find()
     res.json(reply)
     } catch (error) {
     return res.status(500).send(error.message);
@@ -50,6 +50,6 @@ module.exports = {
     replyto,
     deletereply,
     editReply,
-    veiwreply
+    viewReply
  
 }

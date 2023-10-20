@@ -2,7 +2,7 @@ const express = require('express');
 const logger = require('morgan')
 const app = express();
 const cors = require('cors')
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3005;
 const bodyParser = require('body-parser')
 const db = require('./db');
 const uController = require("./controllers/usersController")
@@ -19,7 +19,7 @@ app.use(bodyParser.json())
 
 app.get('/post', pController.viewPosts)
 
-app.get('/replies', rController.veiwreply)
+app.get('/replies', rController.viewReply)
 
 app.get('/user', uController.viewUsers)
 
