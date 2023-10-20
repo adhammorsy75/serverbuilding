@@ -31,7 +31,7 @@ const editUser = async (req, res) => {
         return res.status(500).send(e.message)
     }
 }
-const User = async (req, res) => {
+const user = async (req, res) => {
 try { const user = await new User(req.body)
         await user.save()
         return res.status(201).json({
@@ -44,6 +44,6 @@ try { const user = await new User(req.body)
 module.exports = {
     deleteUser,
     viewUsers,
-    User,
+    user,
     editUser
 }

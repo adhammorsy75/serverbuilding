@@ -19,19 +19,19 @@ app.use(bodyParser.json())
 
 app.get('/post', pController.viewPosts)
 
-app.get('/replies', rController.viewReplies)
+app.get('/replies', rController.veiwreply)
 
 app.get('/user', uController.viewUsers)
 
 app.post('/post', pController.post)
 
-app.post('/replies', rController.reply)
+app.post('/replies', rController.replyto)
 
 app.post('/user', uController.user)
 
 app.delete('/post/:id', pController.deletePost)
 
-app.delete('/replies/:id', rController.deleteReply)
+app.delete('/replies/:id', rController.deletereply)
 
 app.delete('/user/:id', uController.deleteUser)
 
