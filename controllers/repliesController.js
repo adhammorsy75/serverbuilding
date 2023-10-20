@@ -1,15 +1,17 @@
 const { Replies } = require('../models');
-const Editreply = async (req, res) => {
+
+const editReply = async (req, res) => {
     try {
     const id = req.params.id
-    const editreply = await reply.findByIdAndUpdate(id, req.body, { new: true })
-    if (editreply) {
-    return res.status(200).json(editreply)
+    const edit = await reply.findByIdAndUpdate(id, req.body, { new: true })
+    if (edit) {
+    return res.status(200).json(edit)
       } 
     } catch (e) {
     return res.status(500).send(e.message)
     
-}}
+}
+}
 const deletereply = async (req, res) => {
  try {
     const id = req.params.id
@@ -19,7 +21,8 @@ const deletereply = async (req, res) => {
     throw new Error("reply not found")
     } catch (e) {
     return res.status(500).send(e.message)
-}}
+}
+}
 
 const veiwreply = async (req, res) => {
  try {
@@ -27,7 +30,9 @@ const veiwreply = async (req, res) => {
     res.json(reply)
     } catch (error) {
     return res.status(500).send(error.message);
-}}
+}
+
+}
 
 const replyto = async (req, res) => {
     try {
@@ -36,12 +41,15 @@ const replyto = async (req, res) => {
     return res.status(201).json({ reply })
     } catch (e) {
     return res.status(500).send(e.message)
- }}
+ }
 
-    module.exports = {
+}
+
+
+module.exports = {
     replyto,
     deletereply,
-    Editreply,
+    editReply,
     veiwreply
  
 }

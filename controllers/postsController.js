@@ -1,4 +1,5 @@
 const { Post } = require('../models');
+
 const post = async (req, res) => {
     try {
         const x = await new Post(req.body)
